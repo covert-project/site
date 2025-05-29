@@ -562,6 +562,18 @@ form {
 	position: relative;
 }
 
+.flex-card-parent {
+	display: flex;
+	flex-direction: row;
+	background-color: #5c6e70;
+	box-shadow: 0 1px 3px rgba(0,0,0,.25);
+	padding: 0px;
+	margin:10px;
+	border-radius: 10px;
+	position: relative;
+	flex-wrap: wrap; 
+}
+
 .flex-card-text {
 	width: 100%;
 }
@@ -633,6 +645,7 @@ form {
 	justify-content: space-between;
 	position: relative;
 	transition: 0.25s;
+	flex-wrap:wrap;
 }
 .card-highlight:hover {
 	background-color: #0b95e07e;
