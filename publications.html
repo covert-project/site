@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Jamie Wright">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/COVERT.ico" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Desktop Menu -->
+  <header>
+    <div id="header-wrapper">
+      <div class="menu-logo"> 
+        <a href="home.html">
+          <img src="./images/COVERT_named.png" height="100" />
+        </a>
+      </div>
+      <div id="menu-desktop">
+        <nav class="desktop-nav">
+          <ul>
+              <li><a class="menu-item-text" href="home.html">Home</a></li>
+              <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="news.html">News</a></li>
+              <li><a class="menu-item-text" href="publications.html">Publications</a></li>
+              <li><a class="menu-item-text" href="members.html">Members</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div id="wrapper">
+
+    <!-- Mobile Menu -->
+    <div id="menu-mobile" class="sticky">
+      <nav>
+        <div class="collapsible-menu">
+          <input type="checkbox" id="menu">
+          <label for="menu" class = "menu-logo"> <img src="./images/COVERT_named.png" alt="COVERT Logo" />  </label>
+          <div class="menu-content">
+            <ul id="header-menu">
+              <li><a class="menu-item-text" href="home.html">Home</a></li>
+              <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="news.html">News</a></li>
+              <li><a class="menu-item-text" href="publications.html">Publications</a></li>
+              <li><a class="menu-item-text" href="members.html">Members</a></li>
+            </ul>
+          </div>            
+        </div>        
+      </nav>
+    </div>
+  
+    <h1>Publications</h1>
+    <div class="cover-image">
+      <img src="./images/sheffield-cover.webp" alt="An image depicting an overhead view of the University of Sheffield from Endcliffe." width="300">
+    </div>
+
+    <main>
+      <div class="Alt-sect">
+      <p>
+        Here you can find a list of publications attributed to the COVERT project
+      </p></div>
+      
+      <!--PUBLICATION TEMPLATE, copy and paste, filling in respective info-->
+      <div class="flex-card">
+          <div class="flex-card-content">
+            <div class="flex-card-text">
+              <h2 class="card-title">Relative Security: Formally Modeling and (Dis)Proving Resilience Against Semantic Optimization Vulnerabilities</h2>
+              <h3 class="card-description"><b>37th IEEE Computer Security Foundations Symposium (CSF 2024)</b></h3>
+              <p class="card-description">
+                Meltdown and Spectre are vulnerabilities known as transient execution vulnerabilities, where an attacker exploits speculative execution (a semantic optimization present in most modern processors) to break confidentiality. We introduce relative security, a general notion of information-flow security that models this type of vulnerability by contrasting the leaks that are possible in a “vanilla” semantics with those possible in a different semantics, often obtained from the vanilla semantics via some optimizations. We describe incremental proof methods, in the style of Goguen and Meseguer's unwinding, both for proving and for disproving relative security, and deploy these to formally establish the relative (in)security of some standard Spectre examples. Both the abstract results and the case studies have been mechanized in the Isabelle/HOL theorem prover.
+              </p>
+            </div>     
+            
+            <a class="card-link" href="https://www.computer.org/csdl/proceedings-article/csf/2024/620300a409/1W0eVVRRd04">
+              <div class="card-highlight">
+                <h3>Read more</h3>
+                <img class="card-icon" src="./images/external-link.png" alt="">
+              </div>
+            </a>
+
+          </div>      
+      </div>
+      <!--Up to this point-->
+  
+      <a id="button-link" href="#top">
+        <div id="button">
+          <p>Back to top</p>
+        </div>
+      </a>
+          
+    </main>
+
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-style">
+      <ul id="footer-menu">
+        <li class="footer-link"><a class="footer-text" href="contact.html">Contact</a></li> 
+      </ul>
+    </nav>     
+    <p class="footer-info">Copyright © * COVERT Project * All Rights Reserved</p>   
+  </footer> 
+</body>
+
+
+</html>

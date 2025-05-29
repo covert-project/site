@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Jamie Wright">
+  <title>Contact</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/COVERT.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Desktop Menu -->
+  <header>
+    <div id="header-wrapper">
+      <div class="menu-logo"> 
+        <a href="home.html">
+          <img src="./images/COVERT_named.png" height="100" />
+        </a>
+      </div>
+      <div id="menu-desktop">
+        <nav class="desktop-nav">
+          <ul>
+              <li><a class="menu-item-text" href="home.html">Home</a></li>
+              <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="news.html">News</a></li>
+              <li><a class="menu-item-text" href="publications.html">Publications</a></li>
+              <li><a class="menu-item-text" href="members.html">Members</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div id="wrapper">
+
+    <!-- Mobile Menu -->
+    <div id="menu-mobile" class="sticky">
+      <nav>
+        <div class="collapsible-menu">
+          <input type="checkbox" id="menu">
+          <label for="menu" class = "menu-logo"> <img src="./images/COVERT_named.png" alt="COVERT Logo" />  </label>
+          <div class="menu-content">
+            <ul id="header-menu">
+              <li><a class="menu-item-text" href="home.html">Home</a></li>
+              <li><a class="menu-item-text" href="about.html">About</a></li>
+              <li><a class="menu-item-text" href="news.html">News</a></li>
+              <li><a class="menu-item-text" href="publications.html">Publications</a></li>
+              <li><a class="menu-item-text" href="members.html">Members</a></li>
+            </ul>
+          </div>            
+        </div>        
+      </nav>
+    </div>
+
+
+    <main>
+    <div class="Alt-sect">
+      <h1>Contact Us</h1>
+      <p>Get in touch using this form and we will get back to you with more details!</p>
+      
+      <form name="emailComment" data-formid="451" method="post" enctype="text/plain" action="mailto:jwright8@sheffield.ac.uk?subject=COVERT" onsubmit="alert('Mail Sent');">
+        <label class="formInput" for="name">Name <span class="required">*</span></label>
+        <input type="text" id="Name" required>
+        
+        <label class="formInput" for="emailAddress">Email <span class="required">*</span></label>
+        <input type="text" id="emailAddress" name="emailAddress" required>
+      
+        <label for="comment">Comment or Message</label>
+        <textarea id="text" name="comment" style="height:200px"></textarea>
+          
+        <div id="formButtons">
+          <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+          
+      </form>
+      </div>
+
+    </main>
+    
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-style">
+      <ul id="footer-menu">
+        <li class="footer-link"><a class="footer-text" href="contact.html">Contact</a></li> 
+      </ul>
+    </nav>     
+    <p class="footer-info">Copyright © * COVERT Project * All Rights Reserved</p>   
+  </footer> 
+</body>
+
+</html>
